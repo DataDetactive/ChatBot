@@ -1,4 +1,4 @@
-Python==3.6.11
+Python
 Flask==1.1.2
 Werkzeug==1.0.1
 numpy==1.18.1
