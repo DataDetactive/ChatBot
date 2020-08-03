@@ -1,3 +1,4 @@
+
 import nltk
 from nltk.stem.lancaster import LancasterStemmer
 stemmer = LancasterStemmer()
@@ -7,6 +8,8 @@ import random
 import pickle 
 import theano 
 from keras.models import load_model
+import os
+os.environ["KERAS_BACKEND"] = "theano"
 from flask import Flask,jsonify,request
 #from flask_cors import CORS 
 
