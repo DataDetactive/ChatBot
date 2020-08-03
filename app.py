@@ -6,10 +6,10 @@ import numpy as np
 import json 
 import random
 import pickle 
-import theano 
+#import theano 
 from keras.models import load_model
-import os
-os.environ["KERAS_BACKEND"] = "theano"
+
+
 from flask import Flask,jsonify,request
 #from flask_cors import CORS 
 
