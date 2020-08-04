@@ -10,6 +10,7 @@ import logging
 import sys
 #import theano 
 from keras.models import load_model
+nltk.download('punkt')
 
 
 from flask import Flask,jsonify,request
