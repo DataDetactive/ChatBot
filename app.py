@@ -6,6 +6,7 @@ import numpy as np
 import json 
 import random
 import pickle 
+import logging
 #import theano 
 from keras.models import load_model
 
@@ -57,6 +58,10 @@ def chat():
     user_input = request.json['msg']
     
     return jsonify({'msg':str(dialog(user_input))})
+
+
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
 
 if __name__ == '__main__':
      app.run(debug=True)  
