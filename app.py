@@ -14,7 +14,7 @@ nltk.download('punkt')
 
 
 from flask import Flask,jsonify,request
-#from flask_cors import CORS 
+from flask_cors import CORS 
 
 with open("intents.json") as file:
     data = json.load(file)
@@ -51,7 +51,7 @@ def dialog(sen):
 
 
 app = Flask(__name__)
-#CORS(app)
+CORS(app)
 model  = load_model('newmodel.h5')
 
 
